@@ -1,0 +1,24 @@
+{
+  "name": "ng-boilerplate",
+  "description": "Simple, easy and efficient build management system for angularjs apps. Built on Gulp.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Muhammad Usman (http://github.com/sherwaniusman)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angularjs",
+    "angular",
+    "boilerplate",
+    "gulp"
+  ],
+  "homepage": "https://github.com/uxman-sherwani/ng-boilerplate",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
