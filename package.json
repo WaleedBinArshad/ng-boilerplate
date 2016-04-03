@@ -2,10 +2,6 @@
   "version": "1.0.0",
   "name": "ng-boilerplate",
   "description": "Simple, easy and efficient build management system for angularjs apps. Built on Gulp.",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uxman-sherwani/ng-boilerplate.git"
@@ -21,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/uxman-sherwani/ng-boilerplate/issues"
   },
-  "homepage": "https://github.com/uxman-sherwani/ng-boilerplate#readme"
+  "homepage": "https://github.com/uxman-sherwani/ng-boilerplate#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
