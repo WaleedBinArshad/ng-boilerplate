@@ -1,2 +1,4 @@
 // Define angular app and all modules
-angular.module('app', []);
+angular.module('app', [
+  'ui.router'
+]);
