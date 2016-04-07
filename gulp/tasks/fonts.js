@@ -7,7 +7,12 @@ module.exports = function (gulp, config, plugins) {
    * only that file is copied.
   */
   gulp.task('fonts', function() {
-    return gulp.src(config.srcPath + '/fonts/**/*')
+    var fonts = [config.srcPath + '/fonts/**/*'];
+
+    if( config.prodBuild ) 
+      fonts = fonts.concat(config.vendorFonts);
+
+    return gulp.src(fonts)
       .pipe(plugins.cached('fonts-task-cache'))
       .pipe(plugins.if(config.prodBuild, 
         gulp.dest(config.distPath + '/fonts'),

@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--build:css css/main.min.css -->
-      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-      <link rel="stylesheet" type="text/css" href="styles/bootstrap-override.css">
+      <!-- inject:css -->
+      <!-- endinject -->
     <!-- endbuild -->
   </head>
   
   <body>
 
     <div class="container-fluid">
-      Hello World!
+      <div ui-view></div>
     </div>
     
     <!--build:js js/main.min.js -->
-      <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-      <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-      <script type="text/javascript" src="scripts/app.js"></script>
+      <!-- inject:js -->
+      <!-- endinject -->
     <!-- endbuild -->
   </body>
 </html>

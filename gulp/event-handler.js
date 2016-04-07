@@ -1,12 +1,7 @@
 module.exports = function(plugins) {
+  var errorsCount = 0;
+
   return {
-    /*
-     * Counter for number of errors.
-     * Incremented everytime 'onError' function is invoked.
-    */ 
-    errorsCount: 0,
-
-
     /*
      * Error handler for gulp exceptions.
     */
@@ -16,7 +11,7 @@ module.exports = function(plugins) {
         'message': 'Check Console'
       });
 
-      this.errorsCount++;
+      errorsCount++;
       plugins.util.log(error);
       this.emit('end');
     },
@@ -26,7 +21,7 @@ module.exports = function(plugins) {
      * Function to check for errors after a task was completed.
     */
     onTaskComplete: function( taskName ) {
-      if( this.errorsCount > 0 ) {
+      if( errorsCount > 0 ) {
         plugins.util.log(plugins.util.colors.bgRed('Task "' + taskName + '" terminated because of error(s)'));
         process.exit(1);
       }
