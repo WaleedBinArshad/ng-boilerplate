@@ -14,6 +14,7 @@ module.exports = function (gulp, config, plugins) {
       .pipe(plugins.if('*.scss', plugins.sass()))
       .pipe(plugins.if('*.less', plugins.less()))
       .pipe(plugins.autoprefixer())
-      .pipe(gulp.dest(config.buildPath + '/styles'));
+      .pipe(gulp.dest(config.buildPath + '/styles'))
+      .pipe(plugins.livereload());
   });
 };

@@ -10,6 +10,7 @@ module.exports = function (gulp, config, plugins) {
         adapter: 'angular',
         name: config.ngAppName
       }))
-      .pipe(gulp.dest(config.buildPath + '/scripts'));
+      .pipe(gulp.dest(config.buildPath + '/scripts'))
+      .pipe(plugins.livereload());
   });
 };

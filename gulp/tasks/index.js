@@ -22,6 +22,8 @@ module.exports = function (gulp, config, plugins) {
 
     return gulp.src(config.srcPath + '/index.html')
       .pipe(plugins.inject(sources, { relative: true }))
-      .pipe(gulp.dest(config.buildPath));
+      .pipe(plugins.injectString.before('</body>', '<script src="http://localhost:35729/livereload.js"></script>\n'))
+      .pipe(gulp.dest(config.buildPath))
+      .pipe(plugins.livereload());
   });
 };

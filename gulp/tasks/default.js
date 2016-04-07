@@ -7,6 +7,8 @@ module.exports = function (gulp, config, plugins) {
    * Run using 'gulp'
   */  
   gulp.task('default', ['build'], function () {
+    plugins.livereload.listen();
+    
     gulp.watch(config.srcPath + '/scripts/**/*.tpl.html', ['templates']);
     gulp.watch(config.srcPath + '/images/**/*', ['images']);
     gulp.watch(config.srcPath + '/fonts/**/*', ['fonts']);

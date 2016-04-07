@@ -18,6 +18,7 @@ module.exports = function (gulp, config, plugins) {
       .pipe(plugins.if('*.coffee', plugins.coffeelint.reporter()))
       .pipe(plugins.if('*.coffee', plugins.coffeelint.reporter('fail')))
       .pipe(plugins.if('*.coffee', plugins.coffee({ bare: true })))
-      .pipe(gulp.dest(config.buildPath + '/scripts'));
+      .pipe(gulp.dest(config.buildPath + '/scripts'))
+      .pipe(plugins.livereload());
   });
 };
