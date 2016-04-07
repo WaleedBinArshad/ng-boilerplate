@@ -21,7 +21,7 @@ $ gulp
 Then, open `file:ng-boilerplate/tmp/index.html` in your browser. That's all you need to start adding code for your angularjs application (no need to run any node server).
 
 ## Directory Structure
-The driectory structure based on angularjs best pratices and it makes maintaining and scaling the app super easy.
+The driectory structure is based on angularjs best pratices and it makes maintaining and scaling the app super easy.
 
 ```
 ng-boilerplate
@@ -116,7 +116,7 @@ Then mention paths to all the css, js and font files offered by the package in `
 
 ## Author
 
-**Muhammad Usman** (http://github.com/sherwaniusman)
+**Muhammad Usman** (http://github.com/uxman-sherwani)
 
 ## Copyright and license
 
