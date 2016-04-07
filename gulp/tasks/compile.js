@@ -8,6 +8,7 @@ module.exports = function (gulp, config, plugins) {
   */
   gulp.task('useref', function() {
     return gulp.src(config.buildPath + '/index.html')
+      .pipe(plugins.injectString.replace('<script src="http://localhost:35729/livereload.js"></script>\n', ''))
       .pipe(plugins.useref())
       .pipe(plugins.if('*.js', plugins.ngAnnotate()))
       .pipe(plugins.if('*.js', plugins.uglify()))
