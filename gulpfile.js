@@ -19,7 +19,8 @@ var gulp = require('gulp');
  * listed in file 'package.json'
 */
 var plugins = require('gulp-load-plugins')({
-  pattern: ['*'], // Load all 
+  pattern: ['*'], // Load all
+  pattern: ['gulp-*', 'run-sequence', 'del'], 
   lazy: true // whether the plugins should be lazy loaded on demand 
 });
 

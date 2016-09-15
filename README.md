@@ -12,7 +12,7 @@ Install Node.js and then:
 ```sh
 $ git clone git@github.com:uxman-sherwani/ng-boilerplate.git
 $ cd ng-boilerplate
-$ sudo npm -g install gulp jshint bower
+$ npm -g install gulp jshint bower
 $ npm install
 $ bower install
 $ gulp
