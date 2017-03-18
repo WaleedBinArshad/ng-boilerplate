@@ -1,7 +1,7 @@
 # ng-boilerplate
-> Simple, easy and efficient build management system for angularjs apps. Built on Gulp. With material design goodness.
+> Simple, easy and efficient build management system for angularjs apps. Built on Gulp.
 
-The purpose of this project is to provide a boilerplate to quickly start building Angularjs applications. Inspired from [ngbp](https://github.com/ngbp/ngbp) but with the goodness, power and speed of Gulp. It's configured with material design [(See ng-material)](https://material.angularjs.org/latest/). It's packed with all the tasks needed for development and production builds and provides best practices for structuring your angularjs apps.
+The purpose of this project is to provide a boilerplate to quickly start building Angularjs applications. Inspired from [ngbp](https://github.com/ngbp/ngbp) but with the goodness, power and speed of Gulp. It's packed with all the tasks needed for development and production builds and provides best practices for structuring your angularjs apps.
 
 ***
 
@@ -66,10 +66,7 @@ tasksPath: 'gulp/tasks', // Path where all gulp tasks reside.
  * List all stylesheets from bower_components here.
  * Globs are not allowed here and the order is important.
 */
-vendorCss: [
-  'bower_components/angular-material/angular-material.css'
-],
-
+vendorCss: [],
 
 /*
  * List all javascripts from bower_components here.
@@ -77,10 +74,7 @@ vendorCss: [
 */
 vendorJs: [
   'bower_components/angular/angular.js',
-  'bower_components/angular-ui-router/release/angular-ui-router.js',
-  'bower_components/angular-aria/angular-aria.js',
-  'bower_components/angular-animate/angular-animate.js',
-  'bower_components/angular-material/angular-material.js'
+  'bower_components/angular-ui-router/release/angular-ui-router.js'
 ],
 
 /*
