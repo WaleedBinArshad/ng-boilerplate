@@ -1,7 +1,6 @@
 // Define angular app and all modules
 angular.module('app', [
-  'ui.router',
-  'ngMaterial'
+  'ui.router'
 ])
 
 .controller('AppCtrl', function AppCtrl($scope, $location) {

@@ -9,13 +9,12 @@
     "angularjs",
     "angular",
     "boilerplate",
-    "angular-material",
-    "material-desgin",
     "gulp"
   ],
   "homepage": "https://github.com/uxman-sherwani/ng-boilerplate",
   "devDependencies": {
-    "angular-material": "^1.1.1",
-    "angular-ui-router": "^0.2.18"
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.7"
   }
 }
